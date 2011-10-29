@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Digital7Mono';
+  src: url('../_fonts/digital-7-webfont.eot');
+  src: url('../_fonts/digital-7-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../_fonts/digital-7-webfont.woff') format('woff'),
+  url('../_fonts/digital-7-webfont.ttf') format('truetype'),
+  url('../_fonts/digital-7-webfont.svg#Digital7Mono') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF;
+  color: #000;
+  font: 62.5% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size:1.6em;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+#minesweeper {
+  overflow: hidden;
+}
+  
+  .bombsleft,
+  .timer {
+    font: 2em Digital7Mono, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 35px;
+  }
+
+  .bombsleft {
+    float: left;
+  }
+  
+  .timer {
+    float: right;
+    text-align: right;
+  }
+  
+  .smiley {
+    cursor: pointer;
+    font: 2em Digital7Mono, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.game {
+  cursor: default;
+  overflow: hidden;
+}
+  
+  .game div {
+    background: #DDD;
+    border: 2px solid #FFF;
+    border-bottom-color: #BBB;
+    border-right-color: #BBB;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 16px;
+  }
+  
+  .game div.f-0 { border: 2px solid #DDD; }
+  .game div.f-1 { color: #0533FF; }
+  .game div.f-2 { color: #009000; }
+  .game div.f-3 { color: #FF2600; }
+  .game div.f-4 { color: #021A97; }
+  .game div.f-5 { color: #981200; }
+  .game div.f-6 { color: #009397; }
+  .game div.f-7 { color: #982296; }
+  .game div.f-8 { color: #000; }
+  .game div.flag { background: url(../_images/icons.png) no-repeat 0 0; }
+  .game div.bomb { background: url(../_images/icons.png) no-repeat 0 -16px; }
+  .game div.bomb-flag { background: url(../_images/icons.png) no-repeat 0 -32px; }
+  .game div.bomb-exploded { background: url(../_images/icons.png) no-repeat 0 -48px; border-color: #C00; }
+
+.config {
+  font-size: 1.4em;
+  margin-top: 1em;
+}
